@@ -18,3 +18,4 @@ This project use *buildSrc*, this is used because is a sample project so keep in
 
 ### Useful Resources
 * [Kotlin Stability Levels](https://kotlinlang.org/docs/components-stability.html#stability-levels-explained)
+* [NY Times API](https://developer.nytimes.com/docs/movie-reviews-api/1/routes/reviews/search.json/get)
