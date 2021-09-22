@@ -1,0 +1,33 @@
+CREATE TABLE  movie_review_Entity(
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    title TEXT NOT NULL,
+    mpaaRating TEXT NOT NULL,
+    criticsPick INTEGER NOT NULL,
+    byline TEXT NOT NULL,
+    headline TEXT NOT NULL,
+    summaryShort TEXT NOT NULL,
+    publicationDate TEXT NOT NULL,
+    openingDate TEXT NOT NULL,
+    dateUpdated TEXT NOT NULL,
+    imageUrl TEXT NOT NULL
+);
+
+selectAll:
+SELECT *
+FROM movie_review_Entity;
+
+insertMediaReview:
+INSERT OR REPLACE
+INTO movie_review_Entity (
+    id,
+    title,
+    mpaaRating,
+    criticsPick,
+    byline,
+    headline,
+    summaryShort,
+    publicationDate,
+    openingDate,
+    dateUpdated,
+    imageUrl
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
