@@ -1,13 +1,14 @@
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 
 plugins {
-    kotlin("multiplatform")
-    kotlin("native.cocoapods")
-    kotlin(KotlinPlugins.serialization) version Kotlin.version // Use kotlin serialization
+    kotlin(KotlinPlugins.multiplatform)
+    kotlin(KotlinPlugins.cocoapods)
+    kotlin(KotlinPlugins.serialization) version Kotlin.version
     id(Plugins.androidLibrary)
     id(Plugins.sqlDelight)
 }
 
+// CocoaPods requires the podspec to have a version.
 version = "1.0"
 
 kotlin {
